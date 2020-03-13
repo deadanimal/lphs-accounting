@@ -1,0 +1,234 @@
+<div class="header pb-6">
+    <div class=" container-fluid">
+        <div class=" header-body">
+            <div class=" row align-items-center py-4">
+                <div class=" col-lg-6 col-7">
+                    <h6 class=" h2 text-dark d-inline-block mb-0">Pengurusan Stor</h6>
+
+                    <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
+                        <ol class=" breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class=" breadcrumb-item">
+                                <a href="javascript:void(0)"> <i class="far fa-chart-bar text-dark"> </i> </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Terimaan Pembekal</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Tarikh Terima</label>
+                                <input class="form-control" placeholder="" type="date">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Nama Penerima</label>
+                                <input class="form-control" placeholder="Masukkan nama penerima">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Nama Pembekal</label>
+                                <input class="form-control" placeholder="Masukkan nama pembekal">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm">Hantar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Pendaftaran Barang/Stok</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Nama Syarikat</label>
+                                <input class="form-control" placeholder="Masukkan nama syarikat">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">Tarikh</label>
+                                <input class="form-control" type="date">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Kuantiti barang/stok</label>
+                                <input class="form-control" placeholder="Masukkan kuantiti">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">Jangka Hayat Barang (bulan)</label>
+                                <input class="form-control" placeholder="Masukkan jangka hayat barang">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Jenis barang/stok</label>
+                                <select class="form-control custom-select">
+                                    <option selected hidden>Sila pilih jenis barang/stok</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm">Hantar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Permohonan Barang</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Nama Syarikat</label>
+                                <input class="form-control" placeholder="Masukkan nama syarikat">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">Nama Barang</label>
+                                <input class="form-control" placeholder="Masukkan nama barang">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Tarikh Permohonan</label>
+                                <input class="form-control" type="date">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">Kuantiti</label>
+                                <input class="form-control" placeholder="Masukkan kuantiti">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <form>
+                                <label class="form-control-label">Dokumen</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFileLang" lang="en">
+                                    <label class="custom-file-label" for="customFileLang">Pilih fail</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm">Hantar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Pengesahan Permohonan Barang</h4>
+                </div>
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">No.</th>
+                                <th scope="col">Nama Pemohon</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">Kuantiti</th>
+                                <th scope="col">Senarai Dokumen</th>
+                            </tr>
+                        </thead>
+                        <tbody class="list">
+                            <tr>
+                                <th scope="row">1.</th>
+                                <td>Ahmad Ilyas</td>
+                                <td>ST124124</td>
+                                <td>15</td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Borang Permohonan</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                        <label class="custom-control-label" for="customCheck2">Salinanan Permohonan</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2.</th>
+                                <td>Nurul Aina</td>
+                                <td>ST124125</td>
+                                <td>18</td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                        <label class="custom-control-label" for="customCheck3">Borang Permohonan</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                        <label class="custom-control-label" for="customCheck4">Salinanan Permohonan</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Kelulusan Permohonan Barang</h4>
+                </div>
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">No.</th>
+                                <th scope="col">Tarikh</th>
+                                <th scope="col">Nama Pemohon</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="list">
+                            <tr>
+                                <th scope="row">1.</th>
+                                <td>12 Januari 2020</td>
+                                <td>Aiman Hakim</td>
+                                <td>
+                                    <span class="badge badge-info">Dalam proses</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2.</th>
+                                <td>12 Januari 2020</td>
+                                <td>Khairul Anwar</td>
+                                <td>
+                                    <span class="badge badge-danger">Gagal</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

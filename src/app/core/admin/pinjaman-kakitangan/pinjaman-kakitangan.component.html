@@ -1,0 +1,127 @@
+<div class="header pb-6">
+    <div class=" container-fluid">
+        <div class=" header-body">
+            <div class=" row align-items-center py-4">
+                <div class=" col-lg-6 col-7">
+                    <h6 class=" h2 text-dark d-inline-block mb-0">Pinjaman Kakitangan</h6>
+
+                    <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
+                        <ol class=" breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class=" breadcrumb-item">
+                                <a href="javascript:void(0)"> <i class="far fa-chart-bar text-dark"> </i> </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Masterfile Pinjaman Kakitangan</h4>
+                </div>
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Nama</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">No Akaun</th>
+                                <th scope="col">Tarikh Pinjaman</th>
+                                <th scope="col">Jangka Masa</th>
+                            </tr>
+                        </thead>
+                        <tbody class="list">
+                            <tr>
+                                <th scope="row">Aidel Syafiq</th>
+                                <td>STF12411</td>
+                                <td>1263171248</td>
+                                <td>2 Februari 2020</td>
+                                <td>3 tahun</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Amirul Hakimi</th>
+                                <td>STF12411</td>
+                                <td>1263171249</td>
+                                <td>3 Februari 2020</td>
+                                <td>3 tahun</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Aizad Mikael</th>
+                                <td>STF12412</td>
+                                <td>1263151248</td>
+                                <td>5 Februari 2020</td>
+                                <td>3 tahun</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Kalkulator Pinjaman</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Jumlah Pinjam (RM)</label>
+                                <input class="form-control" placeholder="Contoh: 12000">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Tempoh (tahun)</label>
+                                <input class="form-control" placeholder="Contoh: 5">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Bank</label>
+                        <select class="form-control custom-select">
+                            <option selected hidden>Sila pilih bank</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Pembayaran Bulanan (RM)</label>
+                        <input class="form-control" placeholder="">
+                    </div>
+                    <button class="btn btn-primary btn-sm mt-2">Kira</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Pembayaran Balik</h4>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label class="form-control-label">Nama Bank</label>
+                        <select class="form-control custom-select">
+                            <option selected hidden>Sila pilih nama bank</option> 
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">No Akaun Bank</label>
+                        <input class="form-control" placeholder="Contoh: 38512478121">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Jumlah Bayaran</label>
+                        <input class="form-control" placeholder="Contoh: RM1241">
+                    </div>
+                    <button class="btn btn-primary btn-sm mt-2">Bayar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

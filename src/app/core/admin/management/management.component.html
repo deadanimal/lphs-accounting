@@ -1,0 +1,146 @@
+<div class="header pb-6">
+    <div class=" container-fluid">
+        <div class=" header-body">
+            <div class=" row align-items-center py-4">
+                <div class=" col-lg-6 col-7">
+                    <h6 class=" h2 text-dark d-inline-block mb-0">User Management</h6>
+
+                    <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
+                        <ol class=" breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class=" breadcrumb-item">
+                                <a href="javascript:void(0)"> <i class="fas fa-cogs text-dark"> </i> </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class=" col-lg-6 col-5 text-right">
+                    <a class=" btn btn-sm btn-primary text-white" (click)="openDefaultModal(modalAdd)"> New user </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">User List</h4>
+                </div>
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">Last Login</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="list">
+                            <tr>
+                                <th scope="row">Matt Tan</th>
+                                <td>matttan@gmail.com</td>
+                                <td>0167186117</td>
+                                <td>Today, 6.00 P.M</td>
+                                <td>
+                                    <span class="badge badge-pill badge-md badge-primary">Active</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Marzuki Azhar</th>
+                                <td>marzukiazhar@gmail.com</td>
+                                <td>017672181</td>
+                                <td>Today, 5.00 P.M</td>
+                                <td>
+                                    <span class="badge badge-pill badge-md badge-primary">Active</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Zaki Aiman</th>
+                                <td>zaki_aiman@gmail.com</td>
+                                <td>017912391</td>
+                                <td>Today, 2.380 P.M</td>
+                                <td>
+                                    <span class="badge badge-pill badge-md badge-primary">Active</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Nazirul Akbar</th>
+                                <td>johnlennon13@gmail.com</td>
+                                <td>0171194123</td>
+                                <td>Today, 4.38 P.M</td>
+                                <td>
+                                    <span class="badge badge-pill badge-md badge-primary">Active</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    Atiqah Hashim
+                                </th>
+                                <td>atqh@gmail.com</td>
+                                <td>0179001282</td>
+                                <td>Today, 5.40 P.M</td>
+                                <td>
+                                    <span class="badge badge-pill badge-md badge-primary">Active</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #modalAdd>
+    <div class="modal-header">
+        <h6 class="modal-title" id="modal-title-default">
+            Registration Form
+        </h6>
+
+        <button aria-label="Close" class=" close" data-dismiss="modal" type="button" (click)="defaultModal.hide()">
+            <span aria-hidden="true"> × </span>
+        </button>
+    </div>
+
+    <div class="modal-body">
+        <div class="form-group">
+            <label class="form-control-label">
+                Name
+            </label>
+            <input class="form-control form-control-sm" placeholder="Type name" type="text" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label">
+                Email
+            </label>
+            <input class="form-control form-control-sm" placeholder="Type email" type="text" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label">
+                Password
+            </label>
+            <input class="form-control form-control-sm" placeholder="Password" type="password" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label">
+                Confirm Password
+            </label>
+            <input class="form-control form-control-sm" placeholder="Confirm password" type="password" />
+        </div>
+    </div>
+
+    <div class=" modal-footer">
+        <button class=" btn btn-primary" type="button">
+            Register new user
+        </button>
+
+        <button class=" btn btn-link ml-auto" data-dismiss="modal" type="button" (click)="defaultModal.hide()">
+            Close
+        </button>
+    </div>
+</ng-template>

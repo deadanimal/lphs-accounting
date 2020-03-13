@@ -1,0 +1,210 @@
+<div class="header pb-6">
+    <div class=" container-fluid">
+        <div class=" header-body">
+            <div class=" row align-items-center py-4">
+                <div class=" col-lg-6 col-7">
+                    <h6 class=" h2 text-dark d-inline-block mb-0">Pembelian</h6>
+
+                    <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
+                        <ol class=" breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class=" breadcrumb-item">
+                                <a href="javascript:void(0)"> <i class="far fa-chart-bar text-dark"> </i> </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Permintaan Belian</h4>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label class="form-control-label">Nama Syarikat</label>
+                        <input class="form-control" placeholder="Masukkan nama syarikat">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Produk Belian</label>
+                                <input class="form-control" placeholder="Masukkan produk belian">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Jumlah Bayaran</label>
+                                <input class="form-control" placeholder="Masukkan jumlah bayaran">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Butiran Pembelian</label>
+                        <textarea class="form-control" placeholder="Masukkan butiran pembelian"></textarea>
+                    </div>
+                    <button class="btn btn-primary btn-sm">Hantar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Pendaftaran Kontrak Projek</h4>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label class="form-control-label">Nama Syarikat</label>
+                        <input class="form-control" placeholder="Masukkan nama syarikat">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">Nama Projek</label>
+                                <input class="form-control" placeholder="Masukkan nama projek">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label class="form-control-label">ID Projek</label>
+                                <input class="form-control" placeholder="Masukkan ID projek">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Butiran Projek</label>
+                        <textarea class="form-control" placeholder="Masukkan butiran projek"></textarea>
+                    </div>
+                    <button class="btn btn-primary btn-sm">Hantar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Pesanan Belian</h4>
+                </div>
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">No.</th>
+                                <th scope="col">Tarikh Pembelian</th>
+                                <th scope="col">Produk Pembelian</th>
+                                <th scope="col">Jumlah Belian</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="list">
+                            <tr>
+                                <th scope="row">1.</th>
+                                <td>29 Januari 2020</td>
+                                <td>Bundle A4 (10 Rim)</td>
+                                <td>RM340</td>
+                                <td>
+                                    <span class="badge badge-success">Selesai</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2.</th>
+                                <td>30 Januari 2020</td>
+                                <td>Bundle A4 (2 Rim)</td>
+                                <td>RM100</td>
+                                <td>
+                                    <span class="badge badge-success">Selesai</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Purata Belian</h4>
+                </div>
+                <div class="card-body">
+                    <div class="chart">
+                        <div id="chartdiv" style="width: 100%; height: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Jumlah Diperuntukkan</h4>
+                </div>
+                <div class="card-body">
+                    <div class="chart">
+                        <div id="chartdiv1" style="width: 100%; height: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Kos Pembelian</h4>
+                </div>
+                <div class="card-body">
+                    <div class="chart">
+                        <div id="chartdiv2" style="width: 100%; height: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Special Control Account</h4>
+                </div>
+                <div class="table-responsive">
+                    <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">No.</th>
+                                <th scope="col">Nama Projek</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">Jenis Account</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="list">
+                            <tr>
+                                <th scope="row">1.</th>
+                                <td>Bekalan Air Selangor</td>
+                                <td>ACC01241</td>
+                                <td>Wang Pendahuluan</td>
+                                <td>
+                                    <span class="badge badge-success">Aktif</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2.</th>
+                                <td>Preventive Maintenance A</td>
+                                <td>ACC12141</td>
+                                <td>Wang Jaminan Projek</td>
+                                <td>
+                                    <span class="badge badge-success">Aktif</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
