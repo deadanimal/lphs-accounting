@@ -3,7 +3,7 @@
         <div class=" header-body">
             <div class=" row align-items-center py-4">
                 <div class=" col-lg-6 col-7">
-                    <h6 class=" h2 text-dark d-inline-block mb-0">Pengurusan Stor</h6>
+                    <h6 class=" h2 text-dark d-inline-block mb-0">e-Claim</h6>
 
                     <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
                         <ol class=" breadcrumb breadcrumb-links breadcrumb-dark">
@@ -26,37 +26,40 @@
     <div class="row">
         <div class="col">
             <div class="card">
-                <div class="card-header">
-                    <h4 class="m-0">Jumlah Pengguna</h4>
-                </div>
-                <div class="card-body">
-                    <div class="chart">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <div class="card-header">
-                    <h4 class="m-0">Jumlah Tuntutan</h4>
-                </div>
-                <div class="card-body">
-                    <div class="chart">
-                        
-                    </div>
+                <div class="card-body pb-1">
+                    <ngx-gauge 
+                        [type]="gaugeTypeProjek" 
+                        [value]="gaugeValueProjek" 
+                        [label]="gaugeLabelProjek"  
+                        [cap]="gaugeCapProjek"
+                        [thick]="gaugeThickness">
+                    </ngx-gauge>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <div class="card-header">
-                    <h4 class="m-0">Jumlah Pendahuluan</h4>
+                <div class="card-body pb-1">
+                    <ngx-gauge 
+                        [type]="gaugeTypePendahuluan" 
+                        [value]="gaugeValuePendahuluan" 
+                        [label]="gaugeLabelPendahuluan"  
+                        [cap]="gaugeCapPendahuluan"
+                        [thick]="gaugeThickness">
+                    </ngx-gauge>
                 </div>
-                <div class="card-body">
-                    <div class="chart">
-                        
-                    </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body pb-1">
+                    <ngx-gauge 
+                        [type]="gaugeTypePelaburan" 
+                        [value]="gaugeValuePelaburan" 
+                        [label]="gaugeLabelPelaburan"  
+                        [cap]="gaugeCapPelaburan"
+                        [thick]="gaugeThickness">
+                    </ngx-gauge>
                 </div>
             </div>
         </div>
@@ -69,47 +72,7 @@
                 </div>
                 <div class="card-body">
                     <div class="chart">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-header">
-                    <h4 class="m-0">Penetapan Aliran Kerja</h4>
-                </div>
-                <div class="card-body">
-                    <div class="chart">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-header">
-                    <h4 class="m-0">Pendahuluan</h4>
-                </div>
-                <div class="card-body">
-                    <div class="chart">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <div class="card-header">
-                    <h4 class="m-0">Tuntutan</h4>
-                </div>
-                <div class="card-body">
-                    <div class="chart">
-                        
+                        <div id="chartdiv" style="width: 100%; height: 100%"></div>
                     </div>
                 </div>
             </div>

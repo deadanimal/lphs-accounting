@@ -46,13 +46,13 @@ export const ROUTES: RouteInfo[] = [
     path: '/admin/e-claim',
     title: 'eClaim',
     type: 'link',
-    icontype: '' //fas fa-comment-dollar text-pink
+    icontype: 'fas fa-comment-dollar text-pink'
   },
   {
     path: '/admin/pengekosan-projek',
     title: 'Pengekosan Projek',
     type: 'link',
-    icontype: '' //fas fa-search-dollar text-purple
+    icontype: 'fas fa-search-dollar text-purple' //
   },
   {
     path: '/admin/pembelian',
@@ -78,17 +78,17 @@ export const ROUTES: RouteInfo[] = [
     type: 'link',
     icontype: 'fas fa-comments-dollar text-indigo'
   },
-  {
+  /*{
     path: '/admin/terimaan',
     title: 'Terimaan',
     type: 'link',
     icontype: ''
-  },
+  },*/
   {
     path: '/admin/tuntutan',
     title: 'Tuntutan/Pendahuluan',
     type: 'link',
-    icontype: ''
+    icontype: 'fas fa-credit-card text-blue'
   },
   {
     path: '/admin/pelaburan',
@@ -102,12 +102,12 @@ export const ROUTES: RouteInfo[] = [
     type: 'link',
     icontype: 'fas fa-money-check text-green'
   },
-  {
+  /*{
     path: '/admin/lejar-am',
     title: 'Lejar Am',
     type: 'link',
     icontype: ''
-  },
+  },*/
   {
     path: '/admin/perakaunan-aset',
     title: 'Perakaunan Aset',
